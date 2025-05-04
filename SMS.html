@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="assets/logo/LOGO.png" type="image/x-icon">
+
+    <title>HISTORY|MUSEUM-OF-LEGACIES</title>
+</head>
+
+<style>
+    .funt{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .scroller::-webkit-scrollbar{
+      display: none;
+    }
+
+    .sideBar{
+      transition: 1s;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+  <div class="w-[80px] whatsapp h-[80px] bg-[#4CCB5B] flex rounded-full items-center  justify-center  fixed top-[67vh] right-[1vw] z-20">
+    <img  width="50px" src="assets/logo/whatsapp.png" alt="">
+  </div>
+
+
+  <div class="w-[50vw] h-[40vh] lg:text-2xl gap-3 px-3 font-semibold sideBar text-[#285F70] translate-x-[100%]  bg-[#ffff] z-10 right-0 top-[5%] flex flex-col absolute">
+    <div onclick="reverseSlider()" class="lg:text-5xl sm:text-3xl flex items-center justify-end px-2 py-2 cross">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <a href="index.html">
+      <div>HOME</div>
+    </a>
+    <a href="about.html">
+      <div>ABOUT</div>
+    </a>
+    <a href="museum.html">
+      <div>MUSEUMS</div>
+    </a>
+    <a href="collection.html">
+      <div>COLLECTION</div>
+    </a>
+  </div>
+
+
+  <header class="flex flex-col w-full  ">
+    <div class=" grid    sm:grid-cols-1 ">
+         <div class="bg-[#1D242B] box1  sm:hidden text-white"></div>
+         <div class="flex box2   sm:hidden   text-white items-center  bg-[#1D242B]">
+           <a href="about.html">ABOUT</a>
+           <a href="museum.html">MUSEUMS</a>
+           <a href="history.html">HISTORY</a>
+           <a href="#">CONTACT</a>
+         </div>
+         <div class="flex items-center   justify-center text-white bg-[#285F70]">
+                <marquee behavior="scroll"  direction="left"><a href="#">www.top10museum@gmail.com</a></marquee>
+         </div>
+    </div>
+    <div class="bg-white grid grid-cols-2 py-2 lg:px-10 sm:pl-0 px-10">
+              <div class="logo sm:pl-0 lg:px-10  cursor-pointer">
+                   <a href="index.html">
+                     <img width="90px" src="assets/logo/LOGO.png" alt="">
+                   </a>
+              </div>
+
+              <div class="flex items-center sm:justify-end lg:justify-around text-[#1D242B] font-bold ">
+                <a href="about.html" target="_blank" class="hover:text-[#285F70]  sm:hidden lg:block">ABOUT</a>
+                <a href="museum.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">MUSEUMS</a>
+                <a href="history.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">HISTORY</a>
+                <a href="collection.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">COLLECTIONS</a>
+                <span onclick="slider()" class="text-3xl lg:hidden menuBar"><i class="fa-solid fa-bars"></i></span>
+             </div>
+    </div>
+  </header>
+
+    <div class="flex items-center scroller sm:gap-4 sm:flex-nowrap sm:overflow-x-auto justify-around text-[18px] border-y-2 py-4">
+        <a href="history.html" class="text-[blueviolet] underline sm:flex-shrink-0">Albert Hall</a>
+        <a href="KM.html" class="text-[blueviolet] underline sm:flex-shrink-0">Khazana Mahal</a>
+        <a href="citypalace.html" class="text-[blueviolet] underline sm:flex-shrink-0">City Palace</a>
+        <a href="Wax.html" class="text-[blueviolet] underline sm:flex-shrink-0">Wax Museum</a>
+        <a href="anokhi.html" class="text-[blueviolet] underline sm:flex-shrink-0">Anokhi Museum</a>
+        <a href="doll.html" class="text-[blueviolet] underline sm:flex-shrink-0">Dolls Museum</a>
+        <a href="jwells.html" class="text-[blueviolet] underline sm:flex-shrink-0">Gyan Museum</a>
+        <a href="MOL.html" class="text-[blueviolet] underline sm:flex-shrink-0">Museum-of-Legacies</a>
+        <a href="SMS.html" class="text-[blueviolet] underline sm:flex-shrink-0">Sawai Maan Singh || Museum</a>
+        <a href="JKK.html" class="text-[blueviolet] underline sm:flex-shrink-0">Jawahar kala Kendra</a>
+    </div>
+
+    <div>
+        <div class="funt text-3xl py-4 px-2 sm:text-center lg:text-left text-[#1D242B]">Sawai Maan Singh || Museum</div>
+
+        <div class="grid lg:grid-cols-3  " >
+
+            <div class="pl-2 pr-5 sm:col-span-2 lg:col-span-1 py-3 flex flex-col sm:items-center  ">
+                <img src="assets/history/collection/MOL-MAIN.jpg" alt="">
+                <div class="lg:w-[70%] sm:text-center text-[20px] font-semibold ">Where Heritage Lives, and Stories Unfold in <span class="text-[#75d4f0]">Museum-of-Legacies</span> in Jaipur </div>
+            </div>
+            <div class="col-span-2 sm:text-left  sm:px-2 lg:px-0 grid grid-rows-2 gap-3 lg:text-[22px] sm:text-[18px] text-[#1D242B]">
+                <div>
+                    
+                    The City Palace in Jaipur, originally constructed between 1729 and 1732 by Maharaja Sawai Jai Singh II, is a historical marvel that reflects the rich heritage of Rajasthan. In 1959, under the reign of Maharaja Sawai Man Singh II, a portion of this palace was converted into the Maharaja Sawai Man Singh II Museum, often regarded as one of India's premier historical museums. Initially called The City Palace Museum, it showcases an array of artifacts, textiles, weaponry, and royal belongings, offering visitors a glimpse into the grandeur and history of the royal family of Jaipur.The galleries of Maharaja Sawai Man Singh II Museum are spread across a few buildings and courtyards within the City Palace complex. The famous galleries at Maharaja Sawai Man Singh II Museum are Sabha Niwas or The Diwan-E-Aam, Mubarak Mahal (Textile gallery), Diwan-E-Khas (Sarvato Bhadra), Baggi Khana, Silleh Khana (armoury), Painting & Photography, Pothikhana and Friends of Museum.
+                    
+                </div>
+
+                <div>
+                    The purpose of these museums extends beyond merely displaying artifacts; they aim to foster a deeper understanding and appreciation of Rajasthan’s artistic evolution. By hosting educational programs, interactive workshops, and cultural performances, the Museums of Legacies engage with audiences of all ages, helping them explore and connect with the traditions that have flourished here. These museums are particularly significant in Jaipur’s tourism landscape, as they provide an authentic glimpse into the lives and craftsmanship of Rajasthani artisans, whose skills have been passed down through generations. With increasing efforts to modernize and make exhibitions accessible, the museums are also embracing digitalization, creating virtual tours and online archives to reach a global audience. 
+                </div>
+            </div>
+
+        </div>
+
+        <div class="funt text-3xl sm:text-center lg:text-left px-2 border-t-2">
+            Sawai Maan Singh || Museum Collections
+        </div>
+
+        <div class="flex items-center justify-start px-2 border-y-2 scroller overflow-x-auto  flex-nowrap gap-8 py-4 ">
+            <div class="w-[300px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/Albert_Hall_Museum_Night_View.jpg);"></div>
+               
+            
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL1.jpg);"></div>
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL2.jpg);"></div>
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL3.jpg);"></div>
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL4.jpg);"></div>
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL5.jpg);"></div>
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL6.jpg);"></div>
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL7.jpg);"></div>
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL8.jpg);"></div>
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL9.jpg);"></div>
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL10.jpg);"></div>
+            <div class="w-[200px] h-[200px] rounded-xl bg-no-repeat bg-contain bg-center  flex-shrink-0" style="background-image: url(assets/history/collection/MOL11.jpg);"></div>
+        </div>
+    </div>
+
+    <div>
+      <div class="funt text-3xl py-3 pl-2 text-center bg-[#285F70] text-white">Plan Your Visit with Our Map</div>
+      <div class="flex items-center justify-center py-3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.449201643788!2d75.8152857748953!3d26.92097035973674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6ad52623181%3A0x2492dc76cdb97731!2sMuseum%20of%20Legacies!5e0!3m2!1sen!2sin!4v1730874072197!5m2!1sen!2sin" width="1000" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="w-full h-[100px] py-5 px-[8vw] lg:flex-row flex sm:flex-col sm:h-fit  items-center gap-2 justify-center bg-[#285F70]">
+      <div class="text-[20px] font-semibold text-white">
+         Explore The Stories Of Museums . <span class="text-[#1D242B] text-[20px] font-semibold">Get in Touch.</span>
+      </div>
+
+      <div>
+       <input class="py-3 px-5 text-[18px] text-[#1D242B]" type="text" placeholder="ENTER EMAIL ADDRESS">
+      </div>
+
+      <div>
+       <button class="bg-white px-3 py-2 text-[20px] text-[#1D242B]">
+         <i class="fa-solid fa-arrow-right"></i>
+       </button>
+      </div>
+    </div>
+
+    <footer class="w-full bg-[#1D242B] grid sm:grid-col-1  lg:grid-cols-4 px-10 py-5">
+      <div class="flex flex-col px-10 sm:items-center   lg:items-left">
+       <img width="100px" src="assets/logo/LOGO.png" alt="">
+       <hr class="w-[15vw]">
+       <div class="mt-8">
+         <div class="text-[18px] text-white">
+           Contact us : 9399483943
+         </div>
+         <div class="text-[18px] text-white">
+           E-mail : abc@gmail.com
+         </div>
+       </div>
+       <div class="flex lg:hidden text-white items-center py-5 gap-3">
+         <a href="#">
+           <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-facebook"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-youtube"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-google"></i>
+         </a>
+       </div>
+      </div>
+      
+      <div class="flex sm:hidden md:block py-10 flex-col justify-around text-white items-left">
+       <div>ALBERT HALL</div>
+       <div>KHAZANA MAHAL</div>
+       <div>WAX MUSEUM</div>
+       <div>CITY PALACE</div>
+       <div>ANOKHI MUSEUM</div>
+      </div>
+      
+      <div class="flex py-10 sm:hidden md:block flex-col justify-around text-white items-left">
+       <div>DOLLS MUSEUM</div>
+       <div>JWELLS & GEMS</div>
+       <div>MUSEUMS OF LEGACIES</div>
+       <div>SMS MUSEUM</div>
+       <div>AMRAPALI MUSEUM</div>
+
+       
+      </div>
+
+      <div class="flex sm:hidden md:block py-10 flex-col justify-around text-white items-left">
+       <div>PRIVACY POLICY</div>
+       <div>TERM OF USE</div>
+       <div>ACCESSIBLITY</div>
+       <div>RESEARCH</div>
+
+       <div class="flex items-center py-5 gap-3">
+         <a href="#">
+           <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-facebook"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-youtube"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-google"></i>
+         </a>
+       </div>
+     </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</html>

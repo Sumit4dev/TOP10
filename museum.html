@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="assets/logo/LOGO.png" type="image/x-icon">
+
+    <title>TOP10 MUSEUMS</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  .sideBar{
+    transition: 1s;
+  }
+</style>
+
+
+<body>
+
+  <div class="w-[80px] whatsapp h-[80px] bg-[#4CCB5B] flex rounded-full items-center  justify-center  fixed top-[67vh] right-[1vw] z-20">
+    <img  width="50px" src="assets/logo/whatsapp.png" alt="">
+  </div>
+  <div class="w-[50vw] h-[40vh] lg:text-2xl gap-3 px-3 font-semibold sideBar text-[#285F70] translate-x-[100%]  bg-[#ffff] z-10 right-0 top-[5%] flex flex-col absolute">
+    <div onclick="reverseSlider()" class="lg:text-5xl sm:text-3xl flex items-center justify-end px-2 py-2 cross">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <a href="index.html">
+      <div>HOME</div>
+    </a>
+    <a href="about.html">
+      <div>ABOUT</div>
+    </a>
+    <a href="museum.html">
+      <div>MUSEUMS</div>
+    </a>
+    <a href="collection.html">
+      <div>COLLECTION</div>
+    </a>
+  </div>
+
+  <header class="flex flex-col w-full  ">
+    <div class=" grid    sm:grid-cols-1 ">
+         <div class="bg-[#1D242B] box1  sm:hidden text-white"></div>
+         <div class="flex box2   sm:hidden   text-white items-center  bg-[#1D242B]">
+           <a href="about.html">ABOUT</a>
+           <a href="museum.html">MUSEUMS</a>
+           <a href="history.html">HISTORY</a>
+           <a href="#">CONTACT</a>
+         </div>
+         <div class="flex items-center   justify-center text-white bg-[#285F70]">
+                <marquee behavior="scroll"  direction="left"><a href="#">www.top10museum@gmail.com</a></marquee>
+         </div>
+    </div>
+    <div class="bg-white grid grid-cols-2 py-2 lg:px-10 sm:pl-0 px-10">
+              <div class="logo sm:pl-0 lg:px-10  cursor-pointer">
+                   <a href="index.html">
+                     <img width="90px" src="assets/logo/LOGO.png" alt="">
+                   </a>
+              </div>
+
+              <div class="flex items-center sm:justify-end lg:justify-around text-[#1D242B] font-bold ">
+                <a href="about.html" target="_blank" class="hover:text-[#285F70]  sm:hidden lg:block">ABOUT</a>
+                <a href="museum.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">MUSEUMS</a>
+                <a href="history.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">HISTORY</a>
+                <a href="collection.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">COLLECTIONS</a>
+                <span onclick="slider()" class="text-3xl lg:hidden menuBar"><i class="fa-solid fa-bars"></i></span>
+             </div>
+    </div>
+  </header>
+
+    <div class="  flex flex-col px-[5.3vw]">
+        <div class="text-4xl text-[#1D242B] pl-5 py-2 font-semibold"> The Best Museums of Jaipur</div>
+
+          <div class="flex gap-y-12 text-[#1D242B] flex-col py-10">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="flex flex-col px-5">
+                     <div class="h-[200px] bg-cover bg-center" style="background-image: url(assets/Image/khazana\ mahal\ jpr.png);"></div>
+                     <div class="text-2xl font-bold pt-2 ">Khazana Mahal</div>
+                     <div class="ml-auto mr-auto">
+                        Khazana Mahal in Jaipur is a captivating museum that showcases an impressive collection of rare artifacts, treasures, and cultural heritage from India’s royal past. Located within a historic setting, it offers visitors a glimpse into the opulence of Rajasthan’s history through exhibits that include intricate jewelry, royal attire, and ancient artifacts, embodying Jaipur’s rich legacy.
+                     </div>
+                </div>
+
+                <div class="flex flex-col px-5">
+                    <div class="h-[200px] bg-cover bg-center" style="background-image: url(assets/img/Albert_Hall_Museum_Night_View.jpg);"></div>
+                    <div class="text-2xl font-bold pt-2 ">Albert Hall</div>
+                    <div class="ml-auto mr-auto">
+                        The Albert Hall Museum houses a rare and fascinating Egyptian mummy, one of the few in India. This exhibit takes visitors on a journey back to ancient Egypt, offering insight into mummification practices and the cultural significance of death and the afterlife. It’s a surprising addition to the museum, emphasizing the breadth of history connected to Jaipur.
+                    </div>
+               </div>
+
+                <div class="flex flex-col px-5">
+                     <div class="h-[200px] bg-cover bg-center" style="background-image: url(assets/Image/city\ palace\ jpr.jpg);"></div>
+                     <div class="text-2xl font-bold pt-2 ">City Palace</div>
+                     <div class="ml-auto mr-auto">
+                        The City Palace Museum’s Royal Garments Collection showcases traditional clothing worn by Jaipur’s royals. This exhibit provides a glimpse into the grandeur of past royal life, featuring intricately designed garments, hand-embroidered fabrics, and traditional Rajasthani attire, all crafted with astonishing detail.
+                     </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="flex flex-col px-5">
+                     <div class="h-[200px] bg-cover bg-center" style="background-image: url(assets/Image/wax\ museum.avif);"></div>
+                     <div class="text-2xl font-bold pt-2 ">Jaipur Wax Museum</div>
+                     <div class="ml-auto mr-auto">
+                        The Bollywood Hall of Fame at the Jaipur Wax Museum is a favorite among visitors, featuring lifelike wax statues of famous Bollywood stars. This exhibit celebrates India’s love for cinema and Jaipur’s connection to Bollywood, making it an engaging and interactive experience for fans.
+                     </div>
+                </div>
+
+                <div class="flex flex-col px-5">
+                    <div class="h-[200px] bg-cover bg-center" style="background-image: url(assets/Image/jkk.jpg);"></div>
+                    <div class="text-2xl font-bold pt-2 ">Jawahar Kala Kendra</div>
+                    <div class="ml-auto mr-auto">
+                        Jawahar Kala Kendra’s Contemporary Art Gallery presents rotating exhibits of modern Indian art, providing a platform for emerging and established artists alike. The gallery emphasizes the dynamic evolution of Indian culture through art, bridging the past and the present and showcasing Jaipur as a city that celebrates both heritage and innovation.
+                    </div>
+               </div>
+
+                <div class="flex flex-col px-5">
+                     <div class="h-[200px] bg-cover bg-center" style="background-image: url(assets/Image/dolls\ museum.jpg);"></div>
+                     <div class="text-2xl font-bold pt-2 ">Doll Museum</div>
+                     <div class="ml-auto mr-auto">
+                        The International Dolls Collection at Jaipur’s Doll Museum presents dolls dressed in traditional attire from countries across the world. This colorful exhibit fosters cultural appreciation and curiosity, offering a miniature look at global customs and clothing, all in the heart of Jaipur.
+                     </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="flex flex-col px-5">
+                     <div class="h-[200px] bg-cover bg-center" style="background-image: url(assets/Image/Museum-of-Legacies.jpg);"></div>
+                     <div class="text-2xl font-bold pt-2 ">Museum of Legacies</div>
+                     <div class="ml-auto mr-auto">
+                        The Tribal and Folk Art exhibit at the Museum of Legacies highlights the diverse artistic expressions of Rajasthan’s tribal communities. This collection includes intricate paintings, pottery, and sculptures, offering a vivid look into the traditions and beliefs that have shaped Rajasthani culture.
+                     </div>
+                </div>
+
+                <div class="flex flex-col px-5">
+                    <div class="h-[200px] bg-cover bg-center" style="background-image: url(assets/Image/anokhi\ museum.jpg);"></div>
+                    <div class="text-2xl font-bold pt-2 ">Anokhi Museum of Hand Printing</div>
+                    <div class="ml-auto mr-auto">
+                        The Block Printing exhibit at the Anokhi Museum is a tribute to Jaipur’s traditional textile crafts. It showcases the art of block printing with live demonstrations, intricate wooden blocks, and beautiful fabrics that represent Rajasthan’s famous textile heritage. This exhibit brings the past into the present, allowing visitors to see the skill and dedication behind each handcrafted design.
+                    </div>
+               </div>
+
+                <div class="flex flex-col px-5">
+                     <div class="h-[200px] bg-cover bg-center" style="background-image: url(assets/Image/amrapali-museum-grosse-image.jpg);"></div>
+                     <div class="text-2xl font-bold pt-2 ">Amrapali Museum</div>
+                     <div class="ml-auto mr-auto">
+                        The Antique Jewelry Collection at Amrapali Museum showcases exquisite jewelry pieces, some centuries old, made using traditional Rajasthani craftsmanship. The exhibit illustrates Jaipur’s legacy as a jewelry-making capital and features ornate designs that tell stories of past opulence and artistry.
+                     </div>
+                </div>
+          </div>
+
+            
+       
+        </div>
+    </div>
+    
+    
+    <div class="w-full h-[100px] py-5 px-[8vw] lg:flex-row flex sm:flex-col sm:h-fit  items-center gap-2 justify-center bg-[#285F70]">
+      <div class="text-[20px] font-semibold text-white">
+         Explore The Stories Of Museums . <span class="text-[#1D242B] text-[20px] font-semibold">Get in Touch.</span>
+      </div>
+
+      <div>
+       <input class="py-3 px-5 text-[18px] text-[#1D242B]" type="text" placeholder="ENTER EMAIL ADDRESS">
+      </div>
+
+      <div>
+       <button class="bg-white px-3 py-2 text-[20px] text-[#1D242B]">
+         <i class="fa-solid fa-arrow-right"></i>
+       </button>
+      </div>
+    </div>
+
+    <footer class="w-full bg-[#1D242B] grid sm:grid-col-1  lg:grid-cols-4 px-10 py-5">
+      <div class="flex flex-col px-10 sm:items-center   lg:items-left">
+       <img width="100px" src="assets/logo/LOGO.png" alt="">
+       <hr class="w-[15vw]">
+       <div class="mt-8">
+         <div class="text-[18px] text-white">
+           Contact us : 9399483943
+         </div>
+         <div class="text-[18px] text-white">
+           E-mail : abc@gmail.com
+         </div>
+       </div>
+       <div class="flex lg:hidden text-white items-center py-5 gap-3">
+         <a href="#">
+           <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-facebook"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-youtube"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-google"></i>
+         </a>
+       </div>
+      </div>
+      
+      <div class="flex sm:hidden md:block py-10 flex-col justify-around text-white items-left">
+       <div>ALBERT HALL</div>
+       <div>KHAZANA MAHAL</div>
+       <div>WAX MUSEUM</div>
+       <div>CITY PALACE</div>
+       <div>ANOKHI MUSEUM</div>
+      </div>
+      
+      <div class="flex py-10 sm:hidden md:block flex-col justify-around text-white items-left">
+       <div>DOLLS MUSEUM</div>
+       <div>JWELLS & GEMS</div>
+       <div>MUSEUMS OF LEGACIES</div>
+       <div>SMS MUSEUM</div>
+       <div>AMRAPALI MUSEUM</div>
+
+       
+      </div>
+
+      <div class="flex sm:hidden md:block py-10 flex-col justify-around text-white items-left">
+       <div>PRIVACY POLICY</div>
+       <div>TERM OF USE</div>
+       <div>ACCESSIBLITY</div>
+       <div>RESEARCH</div>
+
+       <div class="flex items-center py-5 gap-3">
+         <a href="#">
+           <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-facebook"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-youtube"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-google"></i>
+         </a>
+       </div>
+     </div>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</html>

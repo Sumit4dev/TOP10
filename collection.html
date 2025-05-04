@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="assets/logo/LOGO.png" type="image/x-icon">
+
+    <title>COLLECTION</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<body>
+    <div class="w-[80px] whatsapp h-[80px] bg-[#4CCB5B] flex rounded-full items-center  justify-center  fixed top-[67vh] right-[1vw] z-20">
+        <img  width="50px" src="assets/logo/whatsapp.png" alt="">
+    </div>
+
+
+
+    <div class="w-[50vw] h-[40vh] lg:text-2xl gap-3 px-3 font-semibold sideBar text-[#285F70] translate-x-[100%]  bg-[#ffff] z-10 right-0 top-[5%] flex flex-col absolute">
+        <div onclick="reverseSlider()" class="lg:text-5xl sm:text-3xl flex items-center justify-end px-2 py-2 cross">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <a href="index.html">
+          <div>HOME</div>
+        </a>
+        <a href="about.html">
+          <div>ABOUT</div>
+        </a>
+        <a href="museum.html">
+          <div>MUSEUMS</div>
+        </a>
+        <a href="collection.html">
+          <div>COLLECTION</div>
+        </a>
+    </div>
+
+    <header class="flex flex-col  w-full  ">
+        <div class=" grid    sm:grid-cols-1 ">
+             <div class="bg-[#1D242B] box1  sm:hidden text-white"></div>
+             <div class="flex box2   sm:hidden   text-white items-center  bg-[#1D242B]">
+               <a href="about.html" target="_blank">ABOUT</a>
+               <a href="museum.html" target="">MUSEUMS</a>
+               <a href="history.html">HISTORY</a>
+               <a href="#">CONTACT</a>
+             </div>
+             <div class="flex items-center   justify-center text-white bg-[#285F70]">
+                    <marquee behavior="scroll"  direction="left"><a href="#">www.top10museum@gmail.com</a></marquee>
+             </div>
+        </div>
+        <div class="bg-white grid grid-cols-2 py-2 lg:px-10 sm:pl-0 px-10">
+                  <div class="logo sm:pl-0 lg:px-10  cursor-pointer">
+                       <a href="index.html">
+                         <img width="90px" src="assets/logo/LOGO.png" alt="">
+                       </a>
+                  </div>
+
+                  <div class="flex items-center sm:justify-end lg:justify-around text-[#1D242B] font-bold ">
+                     <a href="about.html" target="_blank" class="hover:text-[#285F70]  sm:hidden lg:block">ABOUT</a>
+                     <a href="museum.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">MUSEUMS</a>
+                     <a href="history.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">HISTORY</a>
+                     <a href="collection.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">COLLECTIONS</a>
+                     <span onclick="slider()" class="text-3xl lg:hidden menuBar"><i class="fa-solid fa-bars"></i></span>
+                  </div>
+        </div>
+    </header>
+
+    <div class="text-3xl font-bold px-10 py-3 text-[#1D242B]">
+        Popular Artifacts of TOP10 Museums
+    </div>
+
+    <div class="grid grid-rows-10 gap-y-8 px-10 py-10">
+        <div class="flex">
+             <div class="w-[30%]">
+                <img width="400px" src="assets/history/collection/egyptian mummy.jpg" alt="">
+             </div>
+             <div class="w-[70%] text-[20px]">
+                The Egyptian mummy housed in the <span class="font-bold text-[#1D242B]">Albert Hall Museum</span> in Jaipur is one of the museum's most intriguing and famous exhibits. This mummy, named Tutu, was brought to Jaipur in the late 19th century from Egypt and is one of the very few Egyptian mummies preserved and displayed in India. Tutu was believed to be a member of an ancient priestly family, and her presence in the museum adds an air of mystery and fascination, drawing both locals and tourists.
+
+                Encased in a glass chamber within the museum’s dimly lit hall, Tutu’s mummy is preserved with remarkable detail. Visitors can observe her intricate wrappings and the symbols painted on her sarcophagus, which reflect ancient Egyptian beliefs about life, death, and the afterlife. The display also includes information on Egyptian mummification processes, which were used to preserve bodies for the afterlife—a significant part of ancient Egyptian religion and culture.
+             </div>
+
+        </div>
+         
+        <div class="flex">
+            <div class="w-[70%] text-[20px]">
+                The Egyptian mummy housed in the Albert Hall Museum in Jaipur is one of the museum's most intriguing and famous exhibits. This mummy, named Tutu, was brought to Jaipur in the late 19th century from Egypt and is one of the very few Egyptian mummies preserved and displayed in India. Tutu was believed to be a member of an ancient priestly family, and her presence in the museum adds an air of mystery and fascination, drawing both locals and tourists.
+ 
+                Encased in a glass chamber within the museum’s dimly lit hall, Tutu’s mummy is preserved with remarkable detail. Visitors can observe her intricate wrappings and the symbols painted on her sarcophagus, which reflect ancient Egyptian beliefs about life, death, and the afterlife. The display also includes information on Egyptian mummification processes, which were used to preserve bodies for the afterlife—a significant part of ancient Egyptian religion and culture.
+             </div>
+
+            <div class="w-[30%]">
+               <img width="400px" src="assets/history/collection/ring.jpg" alt="">
+            </div>
+            
+
+        </div>
+       <div class="flex">
+        <div class="w-[30%]">
+           <img width="400px" src="assets/history/collection/egyptian mummy.jpg" alt="">
+        </div>
+        <div class="w-[70%] text-[20px]">
+           The Egyptian mummy housed in the Albert Hall Museum in Jaipur is one of the museum's most intriguing and famous exhibits. This mummy, named Tutu, was brought to Jaipur in the late 19th century from Egypt and is one of the very few Egyptian mummies preserved and displayed in India. Tutu was believed to be a member of an ancient priestly family, and her presence in the museum adds an air of mystery and fascination, drawing both locals and tourists.
+
+           Encased in a glass chamber within the museum’s dimly lit hall, Tutu’s mummy is preserved with remarkable detail. Visitors can observe her intricate wrappings and the symbols painted on her sarcophagus, which reflect ancient Egyptian beliefs about life, death, and the afterlife. The display also includes information on Egyptian mummification processes, which were used to preserve bodies for the afterlife—a significant part of ancient Egyptian religion and culture.
+        </div>
+
+       </div>
+       <div class="flex">
+        <div class="w-[70%] text-[20px]">
+            The Egyptian mummy housed in the Albert Hall Museum in Jaipur is one of the museum's most intriguing and famous exhibits. This mummy, named Tutu, was brought to Jaipur in the late 19th century from Egypt and is one of the very few Egyptian mummies preserved and displayed in India. Tutu was believed to be a member of an ancient priestly family, and her presence in the museum adds an air of mystery and fascination, drawing both locals and tourists.
+
+            Encased in a glass chamber within the museum’s dimly lit hall, Tutu’s mummy is preserved with remarkable detail. Visitors can observe her intricate wrappings and the symbols painted on her sarcophagus, which reflect ancient Egyptian beliefs about life, death, and the afterlife. The display also includes information on Egyptian mummification processes, which were used to preserve bodies for the afterlife—a significant part of ancient Egyptian religion and culture.
+         </div>
+
+        <div class="w-[30%]">
+           <img width="400px" src="assets/history/collection/egyptian mummy.jpg" alt="">
+        </div>
+        
+
+       </div>
+       <div class="flex">
+        <div class="w-[30%]">
+           <img width="400px" src="assets/history/collection/egyptian mummy.jpg" alt="">
+        </div>
+        <div class="w-[70%] text-[20px]">
+           The Egyptian mummy housed in the Albert Hall Museum in Jaipur is one of the museum's most intriguing and famous exhibits. This mummy, named Tutu, was brought to Jaipur in the late 19th century from Egypt and is one of the very few Egyptian mummies preserved and displayed in India. Tutu was believed to be a member of an ancient priestly family, and her presence in the museum adds an air of mystery and fascination, drawing both locals and tourists.
+
+           Encased in a glass chamber within the museum’s dimly lit hall, Tutu’s mummy is preserved with remarkable detail. Visitors can observe her intricate wrappings and the symbols painted on her sarcophagus, which reflect ancient Egyptian beliefs about life, death, and the afterlife. The display also includes information on Egyptian mummification processes, which were used to preserve bodies for the afterlife—a significant part of ancient Egyptian religion and culture.
+        </div>
+
+       </div>
+       <div class="flex">
+        <div class="w-[70%] text-[20px]">
+            The Egyptian mummy housed in the Albert Hall Museum in Jaipur is one of the museum's most intriguing and famous exhibits. This mummy, named Tutu, was brought to Jaipur in the late 19th century from Egypt and is one of the very few Egyptian mummies preserved and displayed in India. Tutu was believed to be a member of an ancient priestly family, and her presence in the museum adds an air of mystery and fascination, drawing both locals and tourists.
+
+            Encased in a glass chamber within the museum’s dimly lit hall, Tutu’s mummy is preserved with remarkable detail. Visitors can observe her intricate wrappings and the symbols painted on her sarcophagus, which reflect ancient Egyptian beliefs about life, death, and the afterlife. The display also includes information on Egyptian mummification processes, which were used to preserve bodies for the afterlife—a significant part of ancient Egyptian religion and culture.
+         </div>
+
+        <div class="w-[30%]">
+           <img width="400px" src="assets/history/collection/egyptian mummy.jpg" alt="">
+        </div>
+        
+
+       </div>
+       <div class="flex">
+        <div class="w-[30%]">
+           <img width="400px" src="assets/history/collection/egyptian mummy.jpg" alt="">
+        </div>
+        <div class="w-[70%] text-[20px]">
+           The Egyptian mummy housed in the Albert Hall Museum in Jaipur is one of the museum's most intriguing and famous exhibits. This mummy, named Tutu, was brought to Jaipur in the late 19th century from Egypt and is one of the very few Egyptian mummies preserved and displayed in India. Tutu was believed to be a member of an ancient priestly family, and her presence in the museum adds an air of mystery and fascination, drawing both locals and tourists.
+
+           Encased in a glass chamber within the museum’s dimly lit hall, Tutu’s mummy is preserved with remarkable detail. Visitors can observe her intricate wrappings and the symbols painted on her sarcophagus, which reflect ancient Egyptian beliefs about life, death, and the afterlife. The display also includes information on Egyptian mummification processes, which were used to preserve bodies for the afterlife—a significant part of ancient Egyptian religion and culture.
+        </div>
+
+       </div>
+       <div class="flex">
+        <div class="w-[70%] text-[20px]">
+            The Egyptian mummy housed in the Albert Hall Museum in Jaipur is one of the museum's most intriguing and famous exhibits. This mummy, named Tutu, was brought to Jaipur in the late 19th century from Egypt and is one of the very few Egyptian mummies preserved and displayed in India. Tutu was believed to be a member of an ancient priestly family, and her presence in the museum adds an air of mystery and fascination, drawing both locals and tourists.
+
+            Encased in a glass chamber within the museum’s dimly lit hall, Tutu’s mummy is preserved with remarkable detail. Visitors can observe her intricate wrappings and the symbols painted on her sarcophagus, which reflect ancient Egyptian beliefs about life, death, and the afterlife. The display also includes information on Egyptian mummification processes, which were used to preserve bodies for the afterlife—a significant part of ancient Egyptian religion and culture.
+         </div>
+
+        <div class="w-[30%]">
+           <img width="400px" src="assets/history/collection/egyptian mummy.jpg" alt="">
+        </div>
+        
+
+       </div>
+       <div class="flex">
+        <div class="w-[30%]">
+           <img width="400px" src="assets/history/collection/egyptian mummy.jpg" alt="">
+        </div>
+        <div class="w-[70%] text-[20px]">
+           The Egyptian mummy housed in the Albert Hall Museum in Jaipur is one of the museum's most intriguing and famous exhibits. This mummy, named Tutu, was brought to Jaipur in the late 19th century from Egypt and is one of the very few Egyptian mummies preserved and displayed in India. Tutu was believed to be a member of an ancient priestly family, and her presence in the museum adds an air of mystery and fascination, drawing both locals and tourists.
+
+           Encased in a glass chamber within the museum’s dimly lit hall, Tutu’s mummy is preserved with remarkable detail. Visitors can observe her intricate wrappings and the symbols painted on her sarcophagus, which reflect ancient Egyptian beliefs about life, death, and the afterlife. The display also includes information on Egyptian mummification processes, which were used to preserve bodies for the afterlife—a significant part of ancient Egyptian religion and culture.
+        </div>
+
+       </div>
+       <div class="flex">
+        <div class="w-[70%] text-[20px]">
+            The Egyptian mummy housed in the Albert Hall Museum in Jaipur is one of the museum's most intriguing and famous exhibits. This mummy, named Tutu, was brought to Jaipur in the late 19th century from Egypt and is one of the very few Egyptian mummies preserved and displayed in India. Tutu was believed to be a member of an ancient priestly family, and her presence in the museum adds an air of mystery and fascination, drawing both locals and tourists.
+
+            Encased in a glass chamber within the museum’s dimly lit hall, Tutu’s mummy is preserved with remarkable detail. Visitors can observe her intricate wrappings and the symbols painted on her sarcophagus, which reflect ancient Egyptian beliefs about life, death, and the afterlife. The display also includes information on Egyptian mummification processes, which were used to preserve bodies for the afterlife—a significant part of ancient Egyptian religion and culture.
+         </div>
+
+        <div class="w-[30%]">
+           <img width="400px" src="assets/history/collection/egyptian mummy.jpg" alt="">
+        </div>
+        
+
+       </div>
+             
+             
+        
+        
+    </div> 
+
+    <div class="w-full h-[100px] py-5 px-[8vw] lg:flex-row flex sm:flex-col sm:h-fit  items-center gap-2 justify-center bg-[#285F70]">
+      <div class="text-[20px] font-semibold text-white">
+         Explore The Stories Of Museums . <span class="text-[#1D242B] text-[20px] font-semibold">Get in Touch.</span>
+      </div>
+
+      <div>
+       <input class="py-3 px-5 text-[18px] text-[#1D242B]" type="text" placeholder="ENTER EMAIL ADDRESS">
+      </div>
+
+      <div>
+       <button class="bg-white px-3 py-2 text-[20px] text-[#1D242B]">
+         <i class="fa-solid fa-arrow-right"></i>
+       </button>
+      </div>
+    </div>
+
+    <footer class="w-full bg-[#1D242B] grid sm:grid-col-1  lg:grid-cols-4 px-10 py-5">
+      <div class="flex flex-col px-10 sm:items-center   lg:items-left">
+       <img width="100px" src="assets/logo/LOGO.png" alt="">
+       <hr class="w-[15vw]">
+       <div class="mt-8">
+         <div class="text-[18px] text-white">
+           Contact us : 9399483943
+         </div>
+         <div class="text-[18px] text-white">
+           E-mail : abc@gmail.com
+         </div>
+       </div>
+       <div class="flex lg:hidden text-white items-center py-5 gap-3">
+         <a href="#">
+           <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-facebook"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-youtube"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-google"></i>
+         </a>
+       </div>
+      </div>
+      
+      <div class="flex sm:hidden md:block py-10 flex-col justify-around text-white items-left">
+       <div>ALBERT HALL</div>
+       <div>KHAZANA MAHAL</div>
+       <div>WAX MUSEUM</div>
+       <div>CITY PALACE</div>
+       <div>ANOKHI MUSEUM</div>
+      </div>
+      
+      <div class="flex py-10 sm:hidden md:block flex-col justify-around text-white items-left">
+       <div>DOLLS MUSEUM</div>
+       <div>JWELLS & GEMS</div>
+       <div>MUSEUMS OF LEGACIES</div>
+       <div>SMS MUSEUM</div>
+       <div>AMRAPALI MUSEUM</div>
+
+       
+      </div>
+
+      <div class="flex sm:hidden md:block py-10 flex-col justify-around text-white items-left">
+       <div>PRIVACY POLICY</div>
+       <div>TERM OF USE</div>
+       <div>ACCESSIBLITY</div>
+       <div>RESEARCH</div>
+
+       <div class="flex items-center py-5 gap-3">
+         <a href="#">
+           <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-facebook"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-youtube"></i>
+         </a>
+         <a href="#">
+           <i class="fa-brands fa-google"></i>
+         </a>
+       </div>
+     </div>
+    </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</html>

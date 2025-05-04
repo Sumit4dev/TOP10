@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="assets/logo/LOGO.png" type="image/x-icon">
+
+    <title>TOP10 MUSEUMS</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  .sideBar{
+    transition: 1s;
+  }
+
+  body::-webkit-scrollbar{
+    display: none;
+  }
+
+  .whatsapp{
+    box-shadow: 0px 5px 25px #4CCB5B;
+  }
+</style>
+
+<body>
+  <div class="w-[80px] whatsapp h-[80px] bg-[#4CCB5B] flex rounded-full items-center  justify-center  fixed top-[67vh] right-[1vw] z-20">
+    <img  width="50px" src="assets/logo/whatsapp.png" alt="">
+  </div>
+
+
+
+  <div class="w-[50vw] h-[40vh] lg:text-2xl gap-3 px-3 font-semibold sideBar text-[#285F70] translate-x-[100%]  bg-[#ffff] z-10 right-0 top-[5%] flex flex-col absolute">
+    <div onclick="reverseSlider()" class="lg:text-5xl sm:text-3xl flex items-center justify-end px-2 py-2 cross">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <a href="index.html">
+      <div>HOME</div>
+    </a>
+    <a href="about.html">
+      <div>ABOUT</div>
+    </a>
+    <a href="museum.html">
+      <div>MUSEUMS</div>
+    </a>
+    <a href="collection.html">
+      <div>COLLECTION</div>
+    </a>
+  </div>
+  <header class="flex flex-col w-full  ">
+    <div class=" grid    sm:grid-cols-1 ">
+         <div class="bg-[#1D242B] box1  sm:hidden text-white"></div>
+         <div class="flex box2   sm:hidden   text-white items-center  bg-[#1D242B]">
+           <a href="about.html">ABOUT</a>
+           <a href="museum.html">MUSEUMS</a>
+           <a href="history.html">HISTORY</a>
+           <a href="#">CONTACT</a>
+         </div>
+         <div class="flex items-center   justify-center text-white bg-[#285F70]">
+                <marquee behavior="scroll"  direction="left"><a href="#">www.top10museum@gmail.com</a></marquee>
+         </div>
+    </div>
+    <div class="bg-white grid grid-cols-2 py-2 lg:px-10 sm:pl-0 px-10">
+              <div class="logo sm:pl-0 lg:px-10  cursor-pointer">
+                   <a href="index.html">
+                     <img width="90px" src="assets/logo/LOGO.png" alt="">
+                   </a>
+              </div>
+
+              <div class="flex items-center sm:justify-end lg:justify-around text-[#1D242B] font-bold ">
+                <a href="about.html" target="_blank" class="hover:text-[#285F70]  sm:hidden lg:block">ABOUT</a>
+                <a href="museum.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">MUSEUMS</a>
+                <a href="history.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">HISTORY</a>
+                <a href="collection.html" target="_blank" class="hover:text-[#285F70] sm:hidden lg:block">COLLECTIONS</a>
+                <span onclick="slider()" class="text-3xl lg:hidden menuBar"><i class="fa-solid fa-bars"></i></span>
+             </div>
+    </div>
+  </header>
+
+   <section class="w-full px-[5vw] ">
+         <h1 class="text-4xl font-bold text-[#1D242B]">About Us</h1>
+         <div class="w-full h-[600px] mt-2 bg-cover relative bg-center bg-no-repeat" style="background-image: url(assets/Image/about_hero.webp);">
+               <div class="w-[100%] text-white flex flex-col items-center justify-center font-semibold gap-12 lg:text-8xl sm:text-5xl  h-[100%] bg-[#00000086]">
+                  <div class="hero-txt">TOP 1O</div>
+                  <div class="hero-txt">MUSEUMS OF</div>
+                  <div class="hero-txt">JAIPUR</div>
+               </div>
+         </div>
+
+        <div class="flex flex-col gap-4">
+               <div class="py-6 text-4xl text-[#1D242B] font-bold">We tell the stories behind the museums.</div>
+               <div class="text-[22px]">
+                Museums are windows into our past, revealing the stories that shape our understanding of the world. They capture the essence of our culture, art, and history, showcasing the ideas and innovations that have influenced our lives. At <span class="text-blue-500 underline">TOP10 museums</span>, we are dedicated to highlighting the rich and diverse history of Jaipur's museums, where each exhibit tells a unique story about our heritage. We believe that every artifact, from ancient sculptures to traditional crafts, holds a narrative that connects us to our ancestors and to each other.
+               </div>
+
+               <div class="text-[22px]">
+                Our goal is to collect, preserve, interpret, and share these stories, exploring the lesser-known aspects of Jaipur's cultural and historical landscape. We invite you to join us on a journey through time, as we uncover the fascinating tales behind the top museums in Jaipur and their impact on our society.
+               </div>
+        </div>
+
+        <div class="flex flex-col gap-4 py-10">
+            <div class="py-6 text-4xl text-[#1D242B] font-bold">History & Future </div>
+            <div class="text-[22px]">
+                At <span class="text-blue-500 underline">TOP10 museums</span>, we are dedicated to showcasing the rich history and vibrant future of Jaipur’s diverse museums. Each museum is a treasure trove of artifacts and narratives that span centuries, reflecting the artistic, scientific, and cultural evolution of our city. From the historical significance of the Albert Hall Museum, which has been a symbol of Jaipur's cultural heritage since its establishment, to the contemporary exhibitions at the Jawahar Kala Kendra that highlight modern artistic expressions, we aim to uncover the hidden stories behind these institutions.
+            </div>
+
+            <div class="text-[22px]">
+                As we explore the past, we also look toward the future. Our mission is to inspire curiosity and foster appreciation for the rich tapestry of heritage that these museums represent. We believe in the importance of education and community engagement, working to ensure that the stories of our museums continue to resonate with future generations. 
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full h-[100px] py-5 px-[8vw] lg:flex-row flex sm:flex-col sm:h-fit  items-center gap-2 justify-center bg-[#285F70]">
+      <div class="text-[20px] font-semibold text-white">
+         Explore The Stories Of Museums . <span class="text-[#1D242B] text-[20px] font-semibold">Get in Touch.</span>
+      </div>
+
+      <div>
+       <input class="py-3 px-5 text-[18px] text-[#1D242B]" type="text" placeholder="ENTER EMAIL ADDRESS">
+      </div>
+
+      <div>
+       <button class="bg-white px-3 py-2 text-[20px] text-[#1D242B]">
+         <i class="fa-solid fa-arrow-right"></i>
+       </button>
+      </div>
+</div>
+
+<footer class="w-full bg-[#1D242B] grid sm:grid-col-1  lg:grid-cols-4 px-10 py-5">
+  <div class="flex flex-col px-10 sm:items-center   lg:items-left">
+   <img width="100px" src="assets/logo/LOGO.png" alt="">
+   <hr class="w-[15vw]">
+   <div class="mt-8">
+     <div class="text-[18px] text-white">
+       Contact us : 9399483943
+     </div>
+     <div class="text-[18px] text-white">
+       E-mail : abc@gmail.com
+     </div>
+   </div>
+   <div class="flex lg:hidden text-white items-center py-5 gap-3">
+     <a href="#">
+       <i class="fa-brands fa-instagram"></i>
+     </a>
+     <a href="#">
+       <i class="fa-brands fa-facebook"></i>
+     </a>
+     <a href="#">
+       <i class="fa-brands fa-youtube"></i>
+     </a>
+     <a href="#">
+       <i class="fa-brands fa-google"></i>
+     </a>
+   </div>
+  </div>
+  
+  <div class="flex sm:hidden md:block py-10 flex-col justify-around text-white items-left">
+   <div>ALBERT HALL</div>
+   <div>KHAZANA MAHAL</div>
+   <div>WAX MUSEUM</div>
+   <div>CITY PALACE</div>
+   <div>ANOKHI MUSEUM</div>
+  </div>
+  
+  <div class="flex py-10 sm:hidden md:block flex-col justify-around text-white items-left">
+   <div>DOLLS MUSEUM</div>
+   <div>JWELLS & GEMS</div>
+   <div>MUSEUMS OF LEGACIES</div>
+   <div>SMS MUSEUM</div>
+   <div>AMRAPALI MUSEUM</div>
+
+   
+  </div>
+
+  <div class="flex sm:hidden md:block py-10 flex-col justify-around text-white items-left">
+   <div>PRIVACY POLICY</div>
+   <div>TERM OF USE</div>
+   <div>ACCESSIBLITY</div>
+   <div>RESEARCH</div>
+
+   <div class="flex items-center py-5 gap-3">
+     <a href="#">
+       <i class="fa-brands fa-instagram"></i>
+     </a>
+     <a href="#">
+       <i class="fa-brands fa-facebook"></i>
+     </a>
+     <a href="#">
+       <i class="fa-brands fa-youtube"></i>
+     </a>
+     <a href="#">
+       <i class="fa-brands fa-google"></i>
+     </a>
+   </div>
+ </div>
+</footer>
+
+   
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</html>
