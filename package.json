@@ -14,7 +14,9 @@
     "dotenv": "^16.5.0",
     "js": "^0.1.0",
     "postcss": "^8.4.47",
-    "swiper": "^11.2.6",
-    "tailwindcss": "^3.4.14"
+    "swiper": "^11.2.6"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.11"
   }
 }
