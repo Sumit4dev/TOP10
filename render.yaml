@@ -1,0 +1,9 @@
+services:
+  - type: static_site
+    name: top10-site
+    rootDir: TOP10
+    buildCommand: "npm install && npm run build"
+    publishDir: "."
+    env:
+      - key: NODE_VERSION
+        value: 18
